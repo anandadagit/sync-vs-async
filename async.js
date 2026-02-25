@@ -5,6 +5,10 @@ setTimeout(function() {
     console.log('Async');
 }, 100);
 
+fetch('https://api.github.com').then(function() {
+    console.log('Fetch');
+});
+
 console.log('Synchronous');
 
 console.log(a);
